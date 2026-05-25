@@ -55,10 +55,10 @@
         const categoriasOrden = ['promociones', 'individuales', 'aperitivos', 'peruano', 'extras', 'bebestibles'];
         const titulosCategorias = {
             promociones: '🍣 Promociones',
-            individuales: '🥢 Individuales',
+            individuales: '🥢 Gohan y Sushi Burguers',
             aperitivos: '🍱 Aperitivos',
             peruano: '🇵🇪 Tradicional Peruano',
-            extras: '➕ Extras',
+            extras: '➕ Salsas Adicionales',
             bebestibles: '🥤 Bebestibles'
         };
         
