@@ -52,10 +52,12 @@
         grid.innerHTML = '';
         
         // Definir el orden de las categorías
-        const categoriasOrden = ['promociones', 'individuales', 'aperitivos', 'peruano', 'extras', 'bebestibles'];
+        const categoriasOrden = ['promociones', 'gohan', 'sushiburguers', 'handrolls', 'aperitivos', 'peruano', 'extras', 'bebestibles'];
         const titulosCategorias = {
             promociones: '🍣 Promociones',
-            individuales: '🥢 Gohan y Sushi Burguers',
+            gohan: '🍚 Gohan',
+            sushiburgers: '🍔 Sushiburgers',
+            handrolls: '🌯 Handrolls',
             aperitivos: '🍱 Aperitivos',
             peruano: '🇵🇪 Tradicional Peruano',
             extras: '➕ Salsas Adicionales',

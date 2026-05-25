@@ -880,15 +880,33 @@ body::before {
 
 .category-tabs {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;           /* Evita que los botones se envuelvan */
+    overflow-x: auto;            /* Habilita scroll horizontal */
+    overflow-y: hidden;
     gap: 0.75rem;
     margin: 1rem 0 2rem 0;
-    padding: 0.75rem;
-    background: rgba(20, 20, 20, 0.9);
+    padding: 0.75rem 1rem;
+    background: rgba(20, 20, 20, 0.95);
     border-radius: 60px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(128, 0, 255, 0.3);
+    border: 1px solid rgba(157, 78, 221, 0.3);
+    scrollbar-width: thin;       /* Scroll más delgado en Firefox */
+    -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+}
+
+/* Ocultar scrollbar en navegadores WebKit (opcional - más limpio visualmente) */
+.category-tabs::-webkit-scrollbar {
+    height: 3px;
+}
+
+.category-tabs::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.category-tabs::-webkit-scrollbar-thumb {
+    background: #9D4EDD;
+    border-radius: 10px;
 }
 
 .tab-btn {
@@ -903,6 +921,7 @@ body::before {
     transition: all 0.3s ease;
     font-family: inherit;
     letter-spacing: 0.5px;
+    white-space: nowrap;         /* Evita que el texto del botón se divida */
 }
 
 /* Efecto hover: letra morada y blanca, más grande */
@@ -965,15 +984,46 @@ html {
 
 
 @media (max-width: 768px) {
-    .category-tabs {
-        gap: 0.4rem;
-        padding: 0.5rem;
-        border-radius: 40px;
+        .category-tabs {
+        gap: 0.5rem;
+        padding: 0.6rem 1rem;
+        margin: 0.8rem 0 1.5rem 0;
+        border-radius: 50px;
+        /* Sombra suave para dar sensación de profundidad */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
     
     .tab-btn {
-        padding: 8px 14px;
-        font-size: 0.75rem;
+        padding: 8px 18px;
+        font-size: 0.8rem;
+        flex-shrink: 0;          /* Evita que los botones se encojan */
+    }
+    
+    /* Indicador visual de que se puede desplazar (efecto gradiente en los bordes) */
+    .category-tabs {
+        position: relative;
+    }
+    
+    /* Efecto de desvanecimiento en los bordes (opcional) */
+    .category-tabs::before,
+    .category-tabs::after {
+        content: '';
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        pointer-events: none;
+        z-index: 2;
+    }
+    
+    .category-tabs::before {
+        left: 0;
+        background: linear-gradient(90deg, rgba(20,20,20,0.95), transparent);
+    }
+    
+    .category-tabs::after {
+        right: 0;
+        background: linear-gradient(270deg, rgba(20,20,20,0.95), transparent);
     }
     
     .tab-btn:hover {
@@ -1207,4 +1257,15 @@ html {
     padding-top: 6px;
     border-top: 1px dashed rgba(255, 107, 53, 0.3);
     font-style: italic;
+}
+@media (min-width: 769px) {
+    .category-tabs {
+        flex-wrap: wrap;
+        overflow-x: visible;
+        justify-content: center;
+    }
+    
+    .category-tabs::-webkit-scrollbar {
+        display: none;
+    }
 }
