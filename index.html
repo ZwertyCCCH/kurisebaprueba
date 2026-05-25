@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Kuriseba Sushi | Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <img src="assets/img/logo.jpg" alt="Kuriseba Sushi" class="logo">
+            <h1>SUSHI FUSIÓN</h1>
+            <p>Sabores que conectan | Fusión única | Frescura Real</p>
+        </div>
+    </header>
+    <!-- Cinta de navegación por categorías -->
+    <div class="category-tabs">
+        <button class="tab-btn" data-category="promociones">🍣 Promociones</button>
+        <button class="tab-btn" data-category="individuales">🥢 Individuales</button>
+        <button class="tab-btn" data-category="aperitivos">🍱 Aperitivos</button>
+        <button class="tab-btn" data-category="peruano">🇵🇪 Tradicional Peruano</button>
+        <button class="tab-btn" data-category="extras">➕ Extras</button>
+        <button class="tab-btn" data-category="bebestibles">🥤 Bebestibles</button>
+    </div>
+    <button id="cartFloatBtn" class="cart-float">
+        🛒 <span id="cartCount">0</span>
+    </button>
+
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>🛍️ Tu Pedido</h3>
+            <button id="closeCartBtn" class="close-cart">✕</button>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart-msg">Aún no has agregado nada</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total:</strong> <span id="cartTotal">$0</span>
+            </div>
+            <button id="checkoutBtn" class="btn-checkout">Continuar</button>
+        </div>
+    </div>
+
+    <div id="deliveryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🚚 ¿Cómo recibirás tu pedido?</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="option-group">
+                    <label class="radio-option">
+                        <input type="radio" name="tipoPedido" value="retiro" checked>
+                        <span>🏪 Retiro en local<p>Lord Cochrane 588</p></span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="tipoPedido" value="delivery">
+                        <span>🚚 Delivery</span>
+                    </label>
+                </div>
+                
+                <div id="direccionFields" style="display:none;">
+                    <div class="input-group">
+                        <label>Comuna</label>
+                        <input type="text" id="comunaInput" placeholder="Ej: Santiago, Ñuñoa">
+                    </div>
+                    <div class="input-group">
+                        <label>Dirección</label>
+                        <input type="text" id="direccionInput" placeholder="Calle, número, block">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelarModal" class="btn-secondary">Cancelar</button>
+                <button id="confirmarPedido" class="btn-primary">Confirmar por Whatsapp</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cartOverlay" class="overlay"></div>
+
+    <main class="container" id="productsGrid"></main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://wa.me/56974798490" target="_blank" rel="noopener noreferrer" class="social-link wsp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/kuriseba_sushi_fusion" target="_blank" rel="noopener noreferrer" class="social-link ig">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@kuriseba.sushi.fu" target="_blank" rel="noopener noreferrer" class="social-link tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            <p class="footer-text"> Kuriseba Sushi Fusión - Todos los derechos reservados</p>
+            <p class="footer-text"> Lord Cochrane 588, Santiago</p>
+        </div>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/wsp.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
