@@ -78,7 +78,9 @@ const productos = {
         id: 7, 
         nombre: "28 Piezas Mixtas A", 
         descripcion: [
-            { tipo: "XXX:", contenido: "XXX" }
+            { tipo: "8 sin arroz env en queso crema:", contenido: "palta, mango, salmón, almendras, ciboulette" },
+            { tipo: "10 sin arroz frito:", contenido: "queso crema, cebollín, palta, almendras, camarón cocido" },
+            { tipo: "100 env en atún toping ceviche:", contenido: "camarón furai, palta" },
         ],
         precio: 21500, 
         incluye: "Incluye 1 salsa de soya, 1 salsa dulce y una salsa acebichada gratis",
@@ -136,11 +138,12 @@ const productos = {
         id: 12, 
         nombre: "30 Piezas Mixtas E", 
         descripcion: [
+            { tipo: "5 env en ciboulette:", contenido: "pollo furai, queso crema, palta" },
+            { tipo: "5 env en sésamo:", contenido: "kanikama furai, cebollín, queso crema, palta" },
+            { tipo: "5 env en palta:", contenido: "salmón furai, cebollín, queso crema" },
             { tipo: "5 env en salmón:", contenido: "camarón furai, queso crema, cebollín" },
-            { tipo: "5 env en palta:", contenido: "salmón, queso crema, cebollín" },
-            { tipo: "5 env en tempura:", contenido: "champiñón furai, queso crema, cebollín" },
-            { tipo: "5 env en panko:", contenido: "kanikama furai, queso crema, cebollín" },
-            { tipo: "10 frito sin arroz:", contenido: "queso crema, palta, cebollín, almendras, camarón cocido, envuelto en pollo" }
+            { tipo: "5 env en panko:", contenido: "pollo furai, cebollín, queso crema" },
+            { tipo: "5 env en tempura:", contenido: "pollo furai, cebollín, queso crema" },
         ],
         precio: 14500, 
         incluye: "Incluye 1 salsa de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -287,7 +290,7 @@ const productos = {
             { tipo: "10 env en atún:", contenido: "queso crema, cebollín, camarón tempurisado" },
             { tipo: "10 env en tempura:", contenido: "pollo furai, queso crema, cebollín" }
         ],
-        precio: 23000, 
+        precio: 25000, 
         incluye: "Incluye 2 salsas de soya, 2 salsas dulces y 1 salsa acebichada gratis",
         img: "assets/img/promo50b.jpg" 
     },
