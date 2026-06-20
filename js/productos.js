@@ -271,7 +271,7 @@ const productos = {
         nombre: "50 Mixtas A", 
         descripcion: [
             { tipo: "10 env en queso crema:", contenido: "palta, cebollín, camarón furai" },
-            { tipo: "10 env en salmón:", contenido: "queso crema, cebollín, almendras" },
+            { tipo: "10 env en salmón:", contenido: "queso crema, cebollín, almendras, camarón furai" },
             { tipo: "10 env en sésamo:", contenido: "queso crema, cebollín, palta, kanikama furai" },
             { tipo: "10 tempura:", contenido: "pollo furai, queso creama, cebollín" },
             { tipo: "10 panko:", contenido: "pollo furai, cebollín" }
