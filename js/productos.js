@@ -32,7 +32,7 @@ const productos = {
             { tipo: "5 env en salmón:", contenido: "camarón tempura, palta, cebollín" },
             { tipo: "5 env en salmón:", contenido: "rodajas de limón, queso crema, cebollín, camarón furai" },
             { tipo: "5 env en palta:", contenido: "queso crema, cebollín, salmón" },
-            { tipo: "5 env en tempura:", contenido: "kanikama furai, queso crema, cebollín" }
+            { tipo: "5 tempura:", contenido: "kanikama furai, queso crema, cebollín" }
         ],
         precio: 10800, 
         incluye: "Incluye 1 salsa de soya y 1 salsa dulce gratis",
@@ -44,8 +44,8 @@ const productos = {
         descripcion: [
             { tipo: "5 env en palta:", contenido: "queso crema, cebollín, camarón cocido" },
             { tipo: "5 env en salmón:", contenido: "camarón tempura, palta" },
-            { tipo: "5 env en tempura:", contenido: "pollo furai, queso crema, cebollín" },
-            { tipo: "5 env en panko:", contenido: "pollo furai, queso crema, cebollín" }
+            { tipo: "5 tempura:", contenido: "pollo furai, queso crema, cebollín" },
+            { tipo: "5 panko:", contenido: "pollo furai, queso crema, cebollín" }
         ],
         precio: 10500, 
         incluye: "Incluye 1 salsa de soya y 1 salsa dulce gratis",
@@ -55,8 +55,8 @@ const productos = {
         id: 5, 
         nombre: "20 Tempura Hot", 
         descripcion: [
-            { tipo: "10 env en tempura:", contenido: "pollo furai, queso crema, cebollín" },
-            { tipo: "10 env en panko:", contenido: "kanikama furai, queso crema, cebollín" }
+            { tipo: "10 tempura:", contenido: "pollo furai, queso crema, cebollín" },
+            { tipo: "10 panko:", contenido: "kanikama furai, queso crema, cebollín" }
         ],
         precio: 10000, 
         incluye: "Incluye 1 salsa de soya y 1 salsa dulce gratis",
@@ -116,7 +116,7 @@ const productos = {
         descripcion: [
             { tipo: "10 env en palta:", contenido: "salmón, queso crema, cebollín" },
             { tipo: "10 env en salmón:", contenido: "camarón furai, ciboulette, queso crema, almendras" },
-            { tipo: "10 env en panko:", contenido: "pollo furai, cebollín, queso crema" }
+            { tipo: "10 panko:", contenido: "pollo furai, cebollín, queso crema" }
         ],
         precio: 14500, 
         incluye: "Incluye 1 salsa de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -128,7 +128,7 @@ const productos = {
         descripcion: [
             { tipo: "10 env en ciboulette:", contenido: "kanikama furai, queso crema, cebollín" },
             { tipo: "10 env en palta:", contenido: "camarón cocido, queso crema, cebollín" },
-            { tipo: "10 env en panko:", contenido: "pollo furai, queso crema, palta" }
+            { tipo: "10 panko:", contenido: "pollo furai, queso crema, palta" }
         ],
         precio: 14000, 
         incluye: "Incluye 1 salsa de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -142,8 +142,8 @@ const productos = {
             { tipo: "5 env en sésamo:", contenido: "kanikama furai, cebollín, queso crema, palta" },
             { tipo: "5 env en palta:", contenido: "salmón furai, cebollín, queso crema" },
             { tipo: "5 env en salmón:", contenido: "camarón furai, queso crema, cebollín" },
-            { tipo: "5 env en panko:", contenido: "pollo furai, cebollín, queso crema" },
-            { tipo: "5 env en tempura:", contenido: "pollo furai, cebollín, queso crema" },
+            { tipo: "5 panko:", contenido: "pollo furai, cebollín, queso crema" },
+            { tipo: "5 tempura:", contenido: "pollo furai, cebollín, queso crema" },
         ],
         precio: 14500, 
         incluye: "Incluye 1 salsa de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -155,8 +155,8 @@ const productos = {
         descripcion: [
             { tipo: "5 env en salmón:", contenido: "camarón furai, queso crema, cebollín" },
             { tipo: "5 env en palta:", contenido: "salmón, queso crema, cebollín" },
-            { tipo: "5 env en tempura:", contenido: "champiñón furai, queso crema, cebollín" },
-            { tipo: "5 env en panko:", contenido: "kanikama furai, queso crema, cebollín" },
+            { tipo: "5 tempura:", contenido: "champiñón furai, queso crema, cebollín" },
+            { tipo: "5 panko:", contenido: "kanikama furai, queso crema, cebollín" },
             { tipo: "10 frito sin arroz:", contenido: "queso crema, palta, cebollín, almendras, camarón cocido" }
         ],
         precio: 17500, 
@@ -171,7 +171,7 @@ const productos = {
             { tipo: "5 env en palta:", contenido: "queso crema, cebollín, champiñón furai" },
             { tipo: "5 env en ciboulette:", contenido: "queso crema, palta, pollo furai" },
             { tipo: "5 env en sésamo:", contenido: "kanikama furai" },
-            { tipo: "10 env en panko:", contenido: "pollo furai, queso crema, cebollín" }
+            { tipo: "10 panko:", contenido: "pollo furai, queso crema, cebollín" }
         ],
         precio: 18000, 
         incluye: "Incluye 1 salsa de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -184,7 +184,7 @@ const productos = {
             { tipo: "5 env en salmón:", contenido: "queso crema, cebollín, camarón furai" },
             { tipo: "10 env en queso crema:", contenido: "camarón furai, palta, cebollín" },
             { tipo: "5 env en palta:", contenido: "salmón, queso crema, cebollín" },
-            { tipo: "10 env en panko:", contenido: "kanikama furai, queso crema, cebollín" }
+            { tipo: "10 panko:", contenido: "kanikama furai, queso crema, cebollín" }
         ],
         precio: 14500, 
         incluye: "Incluye 1 salsa de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -194,9 +194,9 @@ const productos = {
         id: 16, 
         nombre: "30 Tempura A", 
         descripcion: [
-            { tipo: "10 env en panko:", contenido: "kanikama furai, cebollín, queso crema" },
-            { tipo: "10 env en tempura:", contenido: "pollo furai, cebollín, queso crema" },
-            { tipo: "10 env en panko:", contenido: "camarón furai, queso crema, palta, cebollín" }
+            { tipo: "10 panko:", contenido: "kanikama furai, cebollín, queso crema" },
+            { tipo: "10 tempura:", contenido: "pollo furai, cebollín, queso crema" },
+            { tipo: "10 panko:", contenido: "camarón furai, queso crema, palta, cebollín" }
         ],
         precio: 14000, 
         incluye: "Incluye 1 salsa de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -206,9 +206,9 @@ const productos = {
         id: 17, 
         nombre: "30 Tempura B", 
         descripcion: [
-            { tipo: "10 env en tempura:", contenido: "pollo furai, cebollín, queso crema" },
-            { tipo: "10 env en panko:", contenido: "salmón, queso crema, cebollín" },
-            { tipo: "10 env en panko:", contenido: "camarón tempura, palta, queso crema, salmón ahumado" }
+            { tipo: "10 tempura:", contenido: "pollo furai, cebollín, queso crema" },
+            { tipo: "10 panko:", contenido: "salmón, queso crema, cebollín" },
+            { tipo: "10 panko:", contenido: "camarón tempura, palta, queso crema, salmón ahumado" }
         ],
         precio: 15500, 
         incluye: "Incluye 1 salsa de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -228,10 +228,10 @@ const productos = {
         id: 19, 
         nombre: "40 Piezas Mixtas A", 
         descripcion: [
-            { tipo: "10 env en panko:", contenido: "salmón, queso crema, cebollín" },
-            { tipo: "10 env en tempura:", contenido: "pollo furai, queso crema, cebollín" },
+            { tipo: "10 panko:", contenido: "salmón, queso crema, cebollín" },
+            { tipo: "10 tempura:", contenido: "pollo furai, queso crema, cebollín" },
             { tipo: "10 env en palta:", contenido: "camarón furai, queso crema, cebollín" },
-            { tipo: "10 env en panko:", contenido: "pollo furai, cebollín, queso crema" }
+            { tipo: "10 panko:", contenido: "pollo furai, cebollín, queso crema" }
         ],
         precio: 19000, 
         incluye: "Incluye 2 salsas de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -243,7 +243,7 @@ const productos = {
         descripcion: [
             { tipo: "10 env en plaqueta mixta:", contenido: "camarón furai, queso crema, cebollín" },
             { tipo: "10 env en ciboulette:", contenido: "palta, queso crema, kanikama furai" },
-            { tipo: "20 env en panko:", contenido: "pollo furai, queso crema, cebollín" }
+            { tipo: "20 panko:", contenido: "pollo furai, queso crema, cebollín" }
         ],
         precio: 19000, 
         incluye: "Incluye 2 salsas de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -259,8 +259,8 @@ const productos = {
             { tipo: "5 env en sésamo :", contenido: "kanikama furai, cebollín, queso crema, palta" },
             { tipo: "5 env en palta :", contenido: "salmón furai, cebollín, queso crema " },
             { tipo: "5 env en salmón :", contenido: "camarón furai, queso crema, cebollín" },
-            { tipo: "5 env en panko :", contenido: "pollo furai, cebollín, queso crema" },
-            { tipo: "5 env en tempura :", contenido: "pollo furai, cebollin, queso crema" },
+            { tipo: "5 panko :", contenido: "pollo furai, cebollín, queso crema" },
+            { tipo: "5 tempura :", contenido: "pollo furai, cebollin, queso crema" },
         ],
         precio: 0, 
         incluye: "Incluye 2 salsas de soya, 1 salsa dulce y 1 salsa acebichada gratis",
@@ -270,11 +270,11 @@ const productos = {
         id: 22, 
         nombre: "50 Mixtas A", 
         descripcion: [
-            { tipo: "10 env en salmón:", contenido: "queso crema, palta, camarón furai" },
-            { tipo: "10 env en palta:", contenido: "pollo teriyaki, queso crema, cebollín" },
-            { tipo: "10 env en ueso crema:", contenido: "salmón a la plancha, palta" },
-            { tipo: "10 env en atún:", contenido: "queso crema, cebollín, camarón tempurisado" },
-            { tipo: "10 env en tempura:", contenido: "pollo furai, queso crema, cebollín" }
+            { tipo: "10 env en queso crema:", contenido: "palta, cebollín, camarón furai" },
+            { tipo: "10 env en salmón:", contenido: "queso crema, cebollín, almendras" },
+            { tipo: "10 env en sésamo:", contenido: "queso crema, cebollín, palta, kanikama furai" },
+            { tipo: "10 tempura:", contenido: "pollo furai, queso creama, cebollín" },
+            { tipo: "10 panko:", contenido: "pollo furai, cebollín" }
         ],
         precio: 23000, 
         incluye: "Incluye 2 salsas de soya, 2 salsas dulces y 1 salsa acebichada gratis",
@@ -288,7 +288,7 @@ const productos = {
             { tipo: "10 env en palta:", contenido: "pollo teriyaki, queso crema, cebollín" },
             { tipo: "10 env en queso crema:", contenido: "salmón a la plancha, palta" },
             { tipo: "10 env en atún:", contenido: "queso crema, cebollín, camarón tempurisado" },
-            { tipo: "10 env en tempura:", contenido: "pollo furai, queso crema, cebollín" }
+            { tipo: "10 tempura:", contenido: "pollo furai, queso crema, cebollín" }
         ],
         precio: 25000, 
         incluye: "Incluye 2 salsas de soya, 2 salsas dulces y 1 salsa acebichada gratis",
@@ -316,9 +316,9 @@ const productos = {
             { tipo: "10 env en ciboulette:", contenido: "pollo furai, cebollín, queso crema" },
             { tipo: "10 env en salmón:", contenido: "camarón furai, ciboulette, queso crema" },
             { tipo: "10 env en palta:", contenido: "camarón cocido, queso crema, cebollín" },
-            { tipo: "10 env en tempura:", contenido: "pollo furai, cebollín, queso crema" },
-            { tipo: "10 env en panko:", contenido: "camarón furai, queso crema" },
-            { tipo: "10 env en panko:", contenido: "salmón, queso crema, cebollín" }
+            { tipo: "10 tempura:", contenido: "pollo furai, cebollín, queso crema" },
+            { tipo: "10 panko:", contenido: "camarón furai, queso crema" },
+            { tipo: "10 panko:", contenido: "salmón, queso crema, cebollín" }
         ],
         precio: 31000, 
         incluye: "Incluye 3 salsas de soya, 2 salsas dulces y 1 salsa acebichada gratis",
@@ -331,10 +331,10 @@ const productos = {
             { tipo: "10 env en palta:", contenido: "camarón cocido, queso crema, cebollín" },
             { tipo: "10 env en plaqueta mixta:", contenido: "camarón furai, ciboulette, queso crema" },
             { tipo: "20 env en sésamo:", contenido: "kanikama furai, palta, cebollín, queso crema" },
-            { tipo: "20 env en panko:", contenido: "pollo furai, queso crema, cebollín" },
+            { tipo: "20 panko:", contenido: "pollo furai, queso crema, cebollín" },
             { tipo: "10 env en queso crema:", contenido: "salmón, palta, cebollín" },
             { tipo: "10 env en salmón:", contenido: "camarón tempura, palta, cebollín, spicy" },
-            { tipo: "10 env en tempura:", contenido: "pollo furai, queso crema, cebollín" },
+            { tipo: "10 tempura:", contenido: "pollo furai, queso crema, cebollín" },
             { tipo: "5 Camarón Furai:", contenido: "camarón furai" }
         ],
         precio: 40000, 
@@ -345,9 +345,9 @@ const productos = {
         id: 27, 
         nombre: "120 Piezas Mixtas", 
         descripcion: [
-            { tipo: "20 env en panko", contenido: "kanikama furai, cebollín, queso crema" },
-            { tipo: "20 env en panko:", contenido: "camarón furai, ciboulette, queso crema" },
-            { tipo: "20 env en tempura:", contenido: "pollo furai, queso crema, cebollín" },
+            { tipo: "20 panko", contenido: "kanikama furai, cebollín, queso crema" },
+            { tipo: "20 panko:", contenido: "camarón furai, ciboulette, queso crema" },
+            { tipo: "20 tempura:", contenido: "pollo furai, queso crema, cebollín" },
             { tipo: "10 env en queso crema:", contenido: "salmón furai, palta, cebollín" },
             { tipo: "10 env en salmón:", contenido: "palta, cebollín, queso crema" },
             { tipo: "10 env en palta:", contenido: "camarón cocido, queso crema, cebollín" },
